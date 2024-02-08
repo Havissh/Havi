@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>
+            Havissh's Webpage
+        </title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <style>
+            div {
+                background-image: linear-gradient(to bottom right, blue, rgb(0, 255, 255));
+                width: 325px;
+                border: 5px solid black;
+                padding: 50px;
+                margin: 20px;
+            }
+            body {
+                background-image: linear-gradient(to bottom right, red, purple, blue, rgb(0, 255, 255), rgb(0, 255, 0), rgb(255, 255, 0), rgb(255, 0, 0));
+            }
+        </style>
+    </head>
+    <body>
+        <!--Made By Havissh-->
+        <form name="userdetails" method="get" action="">
+          <label for="fname">First name:</label><br>
+          <input type="text" name="firstname" size=10 value="Havissh"><br><br>
+          <label for="pass">Password:</label><br>
+          <input type="password" name="f1" size="10" maxlength="15" value="FakePSW" id="p1">&NonBreakingSpace;<input type="checkbox" onclick="show()" value="p1">Show Password<br><br>
+          <label for="gender">Sex:</label><br>
+          Male<input type="checkbox" name="r1" value="unchecked">
+          Female<input type="checkbox" name="r1" value="unchecked"><br><br>
+          <label for="hobby">Hobbies:</label><br>
+          Reading<input type="checkbox" name="chk" value="unchecked">
+          Crafting<input type="checkbox" name="chk" value="unchecked">
+          Nothing <input type="checkbox"name="chk"value="unchecked">
+          Make HTML Scripts For Fun <input type="checkbox"name="chk"value="unchecked"><br><br>
+          <input type="submit" name="btnsubmit" value="Submit">
+          <input type="reset" name="btnreset" value="Reset">
+          <input type="button" name="btnsubmit" value="Login">
+          <br><br>
+          <input type="checkbox" onclick="click()" name="noClick"><label for="noClick">Don't Click Me</label><br>
+          <p id="pp1">Don't Look At Me</p>
+        </form>
+        <!--Made By Havissh-->
+
+        <div>
+            <p>
+                My Favourite Song    : Ordinary Person <br>
+                             Place   : 12.965882278306877, 80.25325603690486
+                             <br>
+                             Language: English <br>
+                             Book    : Diary Of A Wimpy Kid Rodrick Rules
+            </p>
+        </div>
+        <p>
+            What To Do Next?
+        </p>
+        <script type="text/javascript" defer>
+            /* Made By Havissh */
+            var clickNo = 0;
+            var text = document.getElementById("pp1").innerHTML;
+
+            function click() {
+                text = "Hello";
+            }
+
+            function show() {
+                var x = document.getElementById("p1");
+                if (x.type === "password") {
+                    x.type = "text";
+                } else {
+                    x.type = "password";
+                }
+            }
+        </script>
+    </body>
+</html>
